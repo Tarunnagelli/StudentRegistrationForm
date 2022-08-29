@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT FORM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scriptnew.js">
+         
+    </script>
+</head>
+<body>
+    
+    <header class="headertxt">
+        <h3>STUDENT REGISTRATION FORM</h3>
+    </header>
+    <div class="student">
+        <div class="studentinfo">
+        <label>STUDENT ----ID 
+            :  </label>
+        <input type="text" name="id" placeholder="Enter student id" value="" id="id">
+        </div>
+        <div class="studentinfo">
+        <label>STUDENT Name :</label>
+        <input type="text" name="name"  placeholder="Enter student name" value="" id="name">
+        </div>
+        
+    </form>
+    </div>
+    <header class="headertxt2">
+        <h3>MARKS (enter marks in each subject)</h3>
+    </header>
+    <div class="marks">
+     
+            <div class="mark">
+            <label>Maths   </label>
+            <input type="number" name="maths" value="" id="maths">
+            </div>
+            <div class="mark">
+            <label>Social</label>
+            <input type="number" name="soc" value="" id="soc">
+            </div>
+            <div class="mark">
+                <label>English </label>
+                <input type="number" name="eng" value="" id="eng">
+                </div>
+                <div class="mark">
+                    <label>Telugu   </label>
+                    <input type="number" name="tel" value="" id="tel">
+                    </div>
+            <div class="mark">
+            <label>Science </label>
+            <input type="number" name="sci" value="" id="sci">
+            </div>
+            <div class="mark">
+            <label>Hindi   </label>
+            <input type="number" name="hindi" value="" id="hindi">
+            </div>
+            
+        
+        </div>
+    </div>
+      <!-- submission -->
+      <section class="submit">
+        <h3 class="sub">SAVING DATA</h3>
+        <div class="but">
+        <button  onclick="sum()">Submit</button>
+        <button onclick="deleterow()">Delete</button>
+        <button id="dd" onclick="addrow()">Save</button>
+        <!-- <button onclick="getall()">Get all</button> -->
+        <button onclick="reset()">Reset</button>
+        <button onclick="modify()">Modify</button>
+       </div>
+   </section>
+    <section class="total">
+        <h3 class ="tot">TOTAL </h3>
+        <div class="tot">
+        <label>Total :</label>
+        <input type="text" name="total" value="" id="total"> 
+        </div>
+        <div class="tot">
+        <label>grade :</label>
+        <input type="text" name="grade" value="" id="grade">
+        </div>
+    </section>
+
+  
+    <!-- block 1 array-->
+    <section class="blockarraydata">
+        <h3>BLOCK ARRAY DATA</h3>
+        <table border="2" class="ys" id="show">
+            <thead>
+                <tr>
+                    <th>Student id</th>
+                    <th>Student name</th>
+                    <th>Maths</th>
+                    <th>Social</th>
+                    <th>English</th>
+                    <th>Telugu</th>
+                    <th>Science</th>
+                    <th>Hindi</th>
+                    <th>Total</th>
+                    <th>Grade</th>
+
+                </tr>
+            </thead>
+        </table>
+    </section>
+</body>
+
+</html>
